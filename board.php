@@ -7,12 +7,19 @@ $o_wins_count = 0;
 
 <html>
 <head>
+	<?php
+	session_start();
+	?>
 	<link rel = "stylesheet"type="text/css"href="board.css">
 	<meta charset="utf-8">
 	<title>Tic-Tac-Toe</title>
 </head>
 
 <body>
+<!-- $_SESSION[] Variable test for player 1 and player 2 -->
+	<?php 
+		echo"Player 1: $_SESSION[player1] <br/> Player 2: $_SESSION[player2]<br/>";
+	?>
 	<h1>Tic Tac Toe</h1>
 	<h2>Please enter x or o:</h2>
 
