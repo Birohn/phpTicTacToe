@@ -1,0 +1,81 @@
+body {
+	background-image: url("images/Crayon.jpg");
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+div.login_body {
+	background-image: url("images/Paper.jpg");
+	width:70%;
+	height:auto;
+	margin:30px auto;
+	padding:auto;
+	border:1px solid #FFE39B;
+	box-shadow: 3px 3px grey;
+	text-align:center;
+	white-space:pre-line;
+}
+form {
+	display:block;
+	margin:auto;
+}
+input {
+	margin-top: 20px;
+	margin-left:10px;
+}
+input[type=text] {
+	background-image: url("images/user.png");
+	background-size: 15px 15px;
+	background-position: 12px 12px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	border: 2px solid #ccc;
+}
+input[type=password] {
+	background-image: url("images/password.png");
+	background-size: 15px 15px;
+	background-position: 12px 12px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	border: 2px solid #ccc;
+	
+}
+button {
+	text-align:center;
+	margin:auto;
+	margin-top:10px;
+}
+h1.rainbow {
+	text-align:center;
+	font-weight:900;
+	-webkit-animation: rainbow 5s infinite;
+	animation: rainbow 5s infinite;
+}
+/* Animations */
+
+@-webkit-keyframes rainbow {
+	0%{color: orange;}
+	10%{color: purple;}
+	20%{color: red;}
+	30%{color: CadetBlue;}
+	40%{color: yellow;}
+	50%{color: coral;}
+	60%{color: green;}
+	70%{color: cyan;}
+	80%{color: DeepPink;}
+	90%{color: DodgerBlue;}
+	100%{color: orange;}
+	
+}
+@keyframes rainbow {
+	0%{color: orange;}
+	10%{color: purple;}
+	20%{color: red;}
+	30%{color: CadetBlue;}
+	40%{color: yellow;}
+	50%{color: coral;}
+	60%{color: green;}
+	70%{color: cyan;}
+	80%{color: DeepPink;}
+	90%{color: DodgerBlue;}
+	100%{color: orange;}
+	
+}

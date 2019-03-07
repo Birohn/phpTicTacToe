@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start();
+?>
 <html>
 <head>
 	<title>Tic Tac Toe</title>
@@ -62,6 +65,12 @@
 			<input type="submit" name="submit">
 		</p>
 	</form>
+	<!--Testing $_SESSION variables from Login -->
+	<?php
+	echo "<h2>These are names of p1 and p2:</h2> <br/>
+			<p> Player1:$_SESSION[player1]<br/>
+			Player2:$_SESSION[player2]</p>" ;
+	?>
 	<?php
 		if ($o_wins) {
 			print "player o wins";
