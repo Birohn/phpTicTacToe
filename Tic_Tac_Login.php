@@ -6,7 +6,7 @@
 		$player1="Player 1";
 		$player2="Player 2";
 		if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
-			header("Location: game_test.php");
+			header("Location: board.php");
 		}
 		if(isset($_POST['username']) && isset($_POST['password'])) {
 			if($_POST['username'] == $username && $_POST['password'] == $password) {
@@ -25,7 +25,7 @@
 					$_SESSION['player2'] = $player2;
 				}
 				$_SESSION['logged_in'] == true;
-				header("Location: game_test.php");
+				header("Location: board.php");
 			}
 		}
 	?>
