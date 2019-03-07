@@ -2,6 +2,17 @@ body {
 	background-image: url("images/Crayon.jpg");
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
+h1{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+.div{
+	padding-left: 550px;
+}
 div.login_body {
 	background-image: url("images/Paper.jpg");
 	width:70%;
@@ -48,6 +59,10 @@ h1.rainbow {
 	font-weight:900;
 	-webkit-animation: rainbow 5s infinite;
 	animation: rainbow 5s infinite;
+}
+
+.error {
+	color: #FF0000;
 }
 /* Animations */
 
