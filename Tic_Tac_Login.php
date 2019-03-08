@@ -39,10 +39,10 @@
 		<div class="login_body">
 			<h1 class="rainbow">Tic-Tac-Toe</h1>
 		<form method="post" action="Tic_Tac_Login.php">
-			<span>Username:</span><input type="text" name="username" placeholder="Username" required autofocus> <br/>
-			<span>Password: </span><input type ="password"  name = "password" placeholder = "Password" required> <br/>
-			<span>PlayerOne:</span><input type="text" name="player1" placeholder="Player"> <br/>
-			<span>PlayerTwo:</span><input type="text" name="player2" placeholder="Player">
+			<span>Username:</span><input class="login" type="text" name="username" placeholder="Username" required autofocus> <br/>
+			<span>Password: </span><input class="login" type ="password"  name = "password" placeholder = "Password" required> <br/>
+			<span>PlayerOne:</span><input class="login" type="text" name="player1" placeholder="Player"> <br/>
+			<span>PlayerTwo:</span><input class="login" type="text" name="player2" placeholder="Player">
 			<br/>
             <button type = "submit" name = "login">Login</button>
 			</div>

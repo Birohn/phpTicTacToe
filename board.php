@@ -10,16 +10,14 @@ $o_wins_count = 0;
 	<?php
 	session_start();
 	?>
-	<link rel = "stylesheet"type="text/css"href="board.css">
+	<link rel = "stylesheet"type="text/css"href="style.css">
 	<meta charset="utf-8">
 	<title>Tic-Tac-Toe</title>
 </head>
 
 <body>
-<!-- $_SESSION[] Variable test for player 1 and player 2 -->
-	<?php 
-		echo"Player 1: $_SESSION[player1] <br/> Player 2: $_SESSION[player2]<br/>";
-	?>
+
+	<div class="login_body">
 	<h1>Tic Tac Toe</h1>
 	<h2>Please enter x or o:</h2>
 
@@ -40,7 +38,7 @@ $o_wins_count = 0;
 				print "<br>";
 			}
 
-			print "<input name= $num type= text size= 8";
+			print "<input class ='board' maxlength ='1' name= $num type= text size= 8";
 
 			if (isset($_POST['submit']) and !empty($_POST[$num]))
 			{
@@ -137,29 +135,6 @@ $o_wins_count = 0;
 
 	?>
 	
-	<!--Testing $_SESSION variables from Login -->
-	<?php
-	echo "<h2>These are names of p1 and p2:</h2> <br/>
-			<p> Player1:$_SESSION[player1]<br/>
-			Player2:$_SESSION[player2]</p>" ;
-	?>
-
-	<table class="scoreboard">
-		<tr>
-			<th colspan="2">Score</th>
-		</tr>
-		<tr>
-			<td><?php echo "$_SESSION[player1]";?></td>
-			<td><?php echo "$_SESSION[x_wins_count]";?> wins</td>
-		</tr>
-		<tr>
-			<td><?php echo "$_SESSION[player2]";?></td>
-			<td><?php echo "$_SESSION[o_wins_count]";?> wins</td>
-		</tr>
-	</table>
-
-
-	</table>
 
 	<?php 
 	$x_wins_count = $_SESSION['x_wins_count'];
@@ -175,6 +150,22 @@ $o_wins_count = 0;
 
 	
 </div>
-
+</div>
+<table class="scoreboard">
+		<tr>
+			<th><?php echo "$_SESSION[player1]";?></th>
+		</tr>
+		<tr>
+			<td><h4><?php echo "$_SESSION[x_wins_count]";?> </h4></td>
+		</tr>
+	</table>
+	<table class="scoreboard2">
+		<tr>
+			<th><?php echo "$_SESSION[player2]";?></th>
+		</tr>
+		<tr>
+			<td><h4><?php echo "$_SESSION[o_wins_count]";?></h4></td>
+		</tr>
+	</table>
 </body>
 </html>

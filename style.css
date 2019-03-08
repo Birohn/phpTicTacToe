@@ -9,9 +9,8 @@ h1{
 h2{
 	text-align: center;
 }
-
-.div{
-	padding-left: 550px;
+h4 {
+	font-size:50px;
 }
 div.login_body {
 	background-image: url("images/Paper.jpg");
@@ -28,11 +27,11 @@ form {
 	display:block;
 	margin:auto;
 }
-input {
+input.login {
 	margin-top: 20px;
 	margin-left:10px;
 }
-input[type=text] {
+input.login[type=text] {
 	background-image: url("images/user.png");
 	background-size: 15px 15px;
 	background-position: 12px 12px;
@@ -40,7 +39,7 @@ input[type=text] {
 	padding: 12px 20px 12px 40px;
 	border: 2px solid #ccc;
 }
-input[type=password] {
+input.login[type=password] {
 	background-image: url("images/password.png");
 	background-size: 15px 15px;
 	background-position: 12px 12px;
@@ -48,6 +47,14 @@ input[type=password] {
 	padding: 12px 20px 12px 40px;
 	border: 2px solid #ccc;
 	
+}
+input.board {
+	background-image: url("images/Paper.jpg");
+	height:90px;
+	width: 90px;
+	font-size: 50px;
+	text-align:center;
+	color: purple;
 }
 button {
 	text-align:center;
@@ -60,7 +67,33 @@ h1.rainbow {
 	-webkit-animation: rainbow 5s infinite;
 	animation: rainbow 5s infinite;
 }
-
+table.scoreboard {
+	top: 50%;
+	left:20%;
+	position:absolute;
+	text-align:center;
+	color: red;
+	width: 150px;
+}
+table.scoreboard2 {
+	top: 50%;
+	left:65%;
+	position:absolute;
+	text-align:center;
+	padding:0;
+	margin:0;
+	color: blue;
+	width: 150px;
+}
+th {
+	padding: 0;
+	margin: 0;
+	font-size:30px;
+}
+td {
+	padding-left: 5px;
+	padding-right:5px;
+}
 .error {
 	color: #FF0000;
 }
